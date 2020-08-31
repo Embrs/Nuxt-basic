@@ -1,0 +1,82 @@
+@import './_mixin.scss';
+
+.g-rotateX-180 {
+  transform: rotateX(180deg);
+}
+
+.g-rotateY-180 {
+  transform: rotateY(180deg);
+}
+
+.g-flex {
+  display: flex;
+}
+
+.g-flex-end {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.g-row {
+  display: flex;
+  align-items: center;
+}
+
+.g-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-row-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.g-row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.g-row-warp {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.g-row-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.g-row-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.g-row-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.g-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.g-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-padding-left-20 {
+  padding-left: 20px;
+}

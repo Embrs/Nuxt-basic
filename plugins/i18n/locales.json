@@ -1,0 +1,8 @@
+{
+  "locale":               ["zh", "cn", "en"],
+  "test.name":            ["測試 {name}", "测试 {name}", "Test {name}"],
+  "header": {
+    "howToBuy": ["HOW TO BUY", "HOW TO BUY", "HOW TO BUY"],
+    "howToSell": ["HOW TO SELL", "HOW TO SELL", "HOW TO SELL"]
+  }
+}

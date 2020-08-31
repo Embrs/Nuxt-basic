@@ -1,0 +1,1 @@
+/* eslint-disable */  export default ({'locale':'en','test.name':'Test {name}','header':{'howToBuy':'HOW TO BUY','howToSell':'HOW TO SELL',},})
