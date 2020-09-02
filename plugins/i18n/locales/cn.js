@@ -1,1 +1,1 @@
-/* eslint-disable */  export default ({'locale':'cn','test.name':'测试 {name}','header':{'howToBuy':'HOW TO BUY','howToSell':'HOW TO SELL',},})
+/* eslint-disable */  export default ({'locale':'cn','test.name':'测试 {name}','header':{'howToBuy':'HOW TO BUY','howToSell':'HOW TO SELL',},'ApiErr':{'100001':'回传格式错误',},'NetworkErr':{'100':'回传格式错误','200':'未知异常','400':'请求格式错误','401':'未授权','403':'拒绝访问','404':'查无资源','405':'请求方法未准许','408':'请求超时','500':'伺服器异常','501':'网路未实现','502':'网路错误','503':'伺服器维护或者过载','504':'网路超时','505':'Http版本不支持该请求','100002':'未知异常',},})

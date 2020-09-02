@@ -35,19 +35,14 @@ html {
     }
   }
 }
+
 #Layout {
-  animation: 2s appear;
+  @include animation(2s, appear);
   overflow-x: hidden;
   @include size;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 80px auto 250px;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
 }
 
 @media only screen and (max-width: 576px) {

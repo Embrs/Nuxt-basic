@@ -3,11 +3,14 @@
     
     .contact-info
       .content
+        h3 XXXXXX
         h6 Service am 10:00 - pm 22:00
         .bottom-line
         h6
           a(href="tel:+886040000000") Tel 0800 888 888
         h6
+          a(href="https://goo.gl/maps/RJLYNLDUTPqZNbX9A" target="_blank") Loc XXXXXXXXXXXX
+        h6 Copyright © nuxt-basic
     .contact-btn
       .semi-circle-btn
         p CONTACT ME!

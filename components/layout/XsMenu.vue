@@ -1,10 +1,10 @@
 <template lang="pug">
   #XsMenu
     .header
-      nuxt-link.title(:to="GetLocalePath('/')" @click.native="CloseThis") TEST
+      nuxt-link.title(:to="GetLocalePath('/')" @click.native="CloseThis") nuxt-basic
     .menu
-      nuxt-link.item(:to="GetLocalePath('/Buy')" @click.native="CloseThis") {{$t("header.howToBuy")}}
-      nuxt-link.item(:to="GetLocalePath('/Sell')" @click.native="CloseThis") {{$t("header.howToSell")}}
+      nuxt-link.item.g-effect-fill(:to="GetLocalePath('/Buy')" @click.native="CloseThis") {{$t("header.howToBuy")}}
+      nuxt-link.item.g-effect-fill(:to="GetLocalePath('/Sell')" @click.native="CloseThis") {{$t("header.howToSell")}}
     .close
       .btn(@click="CloseThis")
         p Close

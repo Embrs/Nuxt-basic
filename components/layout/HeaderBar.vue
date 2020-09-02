@@ -1,7 +1,7 @@
 <template lang="pug">
   #HeaderBar
     header
-      nuxt-link.logo(:to="GetLocalePath('/')") TEST
+      nuxt-link.logo(:to="GetLocalePath('/')") nuxt-basic
     nav.menu
       nuxt-link.item(:to="GetLocalePath('/Buy')") {{$t("header.howToBuy")}}
       nuxt-link.item.g-padding-left-20(:to="GetLocalePath('/Sell')") {{$t("header.howToSell")}}

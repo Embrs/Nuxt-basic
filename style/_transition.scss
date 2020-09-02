@@ -11,3 +11,11 @@
 .component-enter, .component-leave-to {
   opacity: 0;
 }
+
+.component-enter-active, .component-leave-active {
+  transition: opacity 3s;
+}
+.component-enter, .component-leave-to {
+  opacity: 0;
+}
+

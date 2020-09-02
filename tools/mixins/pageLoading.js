@@ -1,3 +1,4 @@
+// 頁面載入進度條
 export default {
   mounted() {
     this.$nextTick(() => {

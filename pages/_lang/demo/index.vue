@@ -5,7 +5,7 @@
       p {{Getter_locale}}
       p {{$t("test.name", {name: "悶悶"})}}
       DatePicker(type="date" placeholder="Select date" style="width: 200px")
-      h1.title TEST
+      h1.title nuxt-basic
       .links
         Button(@click="ChangeLocale('zh')") zh
         Button(@click="ChangeLocale('cn')") cn
@@ -13,6 +13,7 @@
         Button(@click="ToPath('/demo/aaa')") go demo
         H1
           nuxt-link(:to="GetLocalePath('/demo/aaa')") to demo
+    .g-btn-1 aaaa
 </template>
 
 <script>
@@ -45,7 +46,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  font-size: 14px;
   .title {
     font-family: "Quicksand", "Source Sans Pro", -apple-system,
       BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,

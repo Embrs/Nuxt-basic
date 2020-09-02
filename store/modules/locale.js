@@ -24,10 +24,3 @@ export const getters = {
   Getter_locales: state => state.locales,
   Getter_locale: state => state.locale
 };
-
-// export default {
-//   state,
-//   mutations,
-//   actions,
-//   getters
-// };

@@ -4,5 +4,25 @@
   "header": {
     "howToBuy": ["HOW TO BUY", "HOW TO BUY", "HOW TO BUY"],
     "howToSell": ["HOW TO SELL", "HOW TO SELL", "HOW TO SELL"]
+  },
+  "ApiErr": {
+    "100001": ["回傳格式錯誤", "回传格式错误", "Return format error"]
+  },
+  "NetworkErr": {
+    "100002": ["未知異常", "未知异常", "Unknow"],
+    "100": ["回傳格式錯誤", "回传格式错误", "Continue"],
+    "200": ["未知異常", "未知异常", "Unknow"],
+    "400": ["請求格式錯誤", "请求格式错误", "Bad Request"],
+    "401": ["未授權", "未授权", "Unauthorized"],
+    "403": ["拒絕訪問", "拒绝访问", "Forbidden"],
+    "404": ["查無資源", "查无资源", "Not Found"],
+    "405": ["請求方法未准許", "请求方法未准许", "Method Not Allowed"],
+    "408": ["請求超時", "请求超时", "Request Timeout"],
+    "500": ["伺服器異常", "伺服器异常", "Internal Server Error"],
+    "501": ["網路未實現", "网路未实现", "Not Implemented"],
+    "502": ["網路錯誤", "网路错误", "Bad Gateway"],
+    "503": ["伺服器維護或者過載", "伺服器维护或者过载", "Service Unavailable"],
+    "504": ["網路超時", "网路超时", "Gateway Timeout"],
+    "505": ["Http版本不支持該請求", "Http版本不支持该请求", "HTTP Version Not Supported"]
   }
 }

@@ -5,7 +5,6 @@
     .shop
       .semi-circle-btn
         p SHOP NOW !
-
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   .demoid
     p id is {{id}}
     pre {{result}}
-    p {{$t("test.name", {name: "悶悶"})}}
+    p {{$t("test.name", {name: "EMBRS""})}}
     Button(@click="ChangeLocale('en')") EN
     Button(@click="ChangeLocale('cn')") CH
     Button(@click="ToPath('/demo')") Back
@@ -13,7 +13,8 @@
 // import axios from "axios";
 
 import mixinsLocale from "@/tools/mixins/locale";
-import mixinsDemo from "@/tools/mixins/demo";
+import mixinsAxiosDemo from "@/tools/mixins/axiosDemo";
+import mixinsResfulApi from "@/tools/mixins/resfulApi";
 
 export default {
   // 驗證
@@ -23,10 +24,15 @@ export default {
     // return new Promise((resolve) => setTimeout(() => resolve()))
   },
   middleware: "rbac",
-  mixins: [mixinsLocale, mixinsDemo],
+  mixins: [mixinsLocale, mixinsAxiosDemo, mixinsResfulApi],
   data() {
     return {
-      id: ""
+      id: "",
+      params: {
+        email: "harry@axolotl.com.tw",
+        password: "111111",
+        invite: ""
+      }
     };
   },
   mounted() {
@@ -37,11 +43,7 @@ export default {
       const {
         data,
         status: { code }
-      } = await this.$api.SignIn({
-        email: "harry@axolotl.com.tw",
-        password: "111111",
-        invite: ""
-      });
+      } = await this.CallApi("SignIn", this.params);
       if (code === 0) {
         this.apires = data.token;
       }

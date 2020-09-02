@@ -1,4 +1,5 @@
 export default function ({ app, req }) {
+  // req use by server
   const isClient = process.client;
   const isServer = process.server;
   if (isServer) {

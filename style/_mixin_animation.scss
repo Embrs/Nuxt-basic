@@ -1,0 +1,41 @@
+
+
+@mixin animation($second: 3, $keyframes: appear) {
+    animation: $second $keyframes;
+}
+
+// 淡入
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
+// 淡出
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+// 放大
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+// 放大
+@keyframes fazoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

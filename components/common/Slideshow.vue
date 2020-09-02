@@ -3,8 +3,7 @@
     .slot-item(v-for="(item, index) in images" :key="index" @click="AddPlayIndex")
       //- use component transition in scss
       transition(name="component" mode="out-in")
-        img.image(v-show="index===playIndex" :src="item")
-      
+        img.image(v-if="index===playIndex" :src="item")
 </template>
 
 <script>
@@ -26,7 +25,7 @@ export default {
     },
     playGap: {
       type: Number,
-      default: () => 5000
+      default: () => 6000
     },
     autoPlay: {
       type: Boolean,
@@ -47,11 +46,6 @@ export default {
       };
     }
   },
-  // watch: {
-  //   windowWeight(newHeight, oldHeight) {
-  //     console.log(newHeight, oldHeight);
-  //   }
-  // },
   mounted() {
     if (this.autoPlay) {
       this.PlayInterval = setInterval(() => {
@@ -90,6 +84,7 @@ export default {
     height: 100%;
     .image {
       width: 100%;
+      @include animation(25s, fadezoom);
     }
   }
 }

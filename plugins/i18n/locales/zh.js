@@ -1,1 +1,1 @@
-/* eslint-disable */  export default ({'locale':'zh','test.name':'測試 {name}','header':{'howToBuy':'HOW TO BUY','howToSell':'HOW TO SELL',},})
+/* eslint-disable */  export default ({'locale':'zh','test.name':'測試 {name}','header':{'howToBuy':'HOW TO BUY','howToSell':'HOW TO SELL',},'ApiErr':{'100001':'回傳格式錯誤',},'NetworkErr':{'100':'回傳格式錯誤','200':'未知異常','400':'請求格式錯誤','401':'未授權','403':'拒絕訪問','404':'查無資源','405':'請求方法未准許','408':'請求超時','500':'伺服器異常','501':'網路未實現','502':'網路錯誤','503':'伺服器維護或者過載','504':'網路超時','505':'Http版本不支持該請求','100002':'未知異常',},})

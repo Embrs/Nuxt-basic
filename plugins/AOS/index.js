@@ -5,11 +5,12 @@ import "aos/dist/aos.css";
 export default ({ app }) => {
   // eslint-disable-next-line new-cap
   app.AOS = new AOS.init({
-    offset: 300,
-    duration: 1000,
+    duration: 600,
     easing: "ease-in-sine"
     // isable: "phone", // 手機版不呈現
   });
+  // data-aos : https://michalsnik.github.io/aos/
+
   // data-aos-offset // 觸發動畫的位置上下(正負px)偏移
   // data-aos-duration // 動畫持續時間
   // data-aos-delay // 動畫延遲時間

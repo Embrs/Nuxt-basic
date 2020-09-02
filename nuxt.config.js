@@ -131,7 +131,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    // vendor: ['vue-i18n'],
+    vendor: ["vue-i18n"],
     extend(config, { isDev }) {
       if (isDev) {
         const dev = [

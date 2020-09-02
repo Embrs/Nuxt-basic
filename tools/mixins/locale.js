@@ -1,3 +1,4 @@
+// 語系控制
 import { mapGetters } from "vuex";
 export default {
   computed: {
@@ -25,7 +26,7 @@ export default {
       this.$router.push(`/${this.Getter_locale}${path}`);
     },
     // 回首頁
-    ToHome(path) {
+    ToHome() {
       this.$router.push(`/${this.Getter_locale}/`);
     },
     // 取得目前路徑

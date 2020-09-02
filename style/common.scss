@@ -1,9 +1,11 @@
 @import './_mixin.scss';
 
+// 水平反轉
 .g-rotateX-180 {
   transform: rotateX(180deg);
 }
 
+// 垂直反轉
 .g-rotateY-180 {
   transform: rotateY(180deg);
 }
