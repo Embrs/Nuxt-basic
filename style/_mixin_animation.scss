@@ -1,9 +1,10 @@
 
-
-@mixin animation($second: 3, $keyframes: appear) {
-    animation: $second $keyframes;
+// infinite 重複動畫
+// alternate 來回運動
+// alternate-reverse 反向來回運動
+@mixin animation($second: 3, $keyframes: appear, $control: null) {
+  animation: $second $keyframes $control;
 }
-
 // 淡入
 @keyframes appear {
   0% {
