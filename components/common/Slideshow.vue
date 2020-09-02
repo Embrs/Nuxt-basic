@@ -84,7 +84,7 @@ export default {
     height: 100%;
     .image {
       width: 100%;
-      @include animation(25s, fadezoom);
+      @include animation(25s, zoomIn);
     }
   }
 }
