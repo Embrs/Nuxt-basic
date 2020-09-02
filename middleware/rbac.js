@@ -1,17 +1,14 @@
 export default function ({ app, req }) {
-  // req use by server
-  const isClient = process.client;
-  const isServer = process.server;
-  if (isServer) {
-    // const role = app.$cookie.getCookieObjectInServer("test5", req);
+  // is server
+  if (process.server) {
+    // const role = app.$cookies.getCookieInServer("role", req);
     // console.log("server", role);
   }
-
-  if (isClient) {
-    // const role = app.$cookie.getCookie("test");
+  // is client
+  if (process.client) {
+    // const role = app.$cookies.getCookie("role");
     // console.log("client", role);
   }
 
-  // console.log("rbac", context.$storage.getLocalStorage("_password"));
   // To Do
 }

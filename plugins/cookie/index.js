@@ -1,8 +1,8 @@
 import Vue from "vue";
-import * as cookie from "./fn.js";
+import * as cookies from "./fn.js";
 
-Vue.prototype.$cookie = cookie;
+Vue.prototype.$cookies = cookies;
 
 export default ({ app }) => {
-  app.$cookie = cookie;
+  app.$cookies = cookies;
 };

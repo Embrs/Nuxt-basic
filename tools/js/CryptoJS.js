@@ -7,23 +7,14 @@ const iv = CryptoJS.enc.Utf8.parse("1234567850814136");
 // aes加密
 export const encrypt = function (word) {
   if (!word) return "";
+  const data = typeof word === "object" ? JSON.stringify(word) : `${word}`;
   let encrypted = "";
-  if (typeof word === "string") {
-    const srcs = CryptoJS.enc.Utf8.parse(word);
-    encrypted = CryptoJS.AES.encrypt(srcs, key, {
-      iv,
-      mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7
-    });
-  } else if (typeof word === "object") {
-    const data = JSON.stringify(word);
-    const srcs = CryptoJS.enc.Utf8.parse(data);
-    encrypted = CryptoJS.AES.encrypt(srcs, key, {
-      iv,
-      mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7
-    });
-  }
+  const srcs = CryptoJS.enc.Utf8.parse(data);
+  encrypted = CryptoJS.AES.encrypt(srcs, key, {
+    iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
   return encrypted.ciphertext.toString();
 };
 
